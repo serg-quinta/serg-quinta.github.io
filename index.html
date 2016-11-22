@@ -8,10 +8,44 @@
   <link rel="stylesheet" href="../starter/css/main.css">
 </head>
 <body>
-  <h1>Hello!</h1>
-  <ul>
-    <li><a href="/starter/">Starter</a></li>
-    <li><a href="/sandbox/js/countdown">Countdown Timer</a></li>
-  </ul>
+  <div class="page page--full">
+    <div class="page-header">
+      <div class="page-section">Serhiy Valchuk Github Pages</div>
+    </div>
+    <div class="page-main page-main--full">
+      <div class="page-section flex-row">
+        <div class="flex-col-main">
+          <article>
+            <h1>Crossbrowser vertical scrolling</h1>
+            <p class="post-meta"> by <span class="author vcard"><a href="/" title="Posts by Vitaliy Podoba" rel="author">Serhiy Valchuk</a></span> | <span class="published">Nov 22, 2016</span> | Tags: responsive, scrollbar, Safari, Webkit</p>
+            <h2>Завдання:</h2>
+            <p>Зробити щоб широкі таблиць на малих екранах горизонтально прокручувались, коли їх вміст не поміщається на сторінці.</p>
+            <h2>Проблема:</h2>
+            <p>Не працює горизонтальний скролінг у Safari на Mac.</p>
+            <h2>Процес:</h2>
+            <p>В ході верстки виявилось, що горизонтальна прокрутка не працює в Safari на Mac. Оскільки при верстці я використовував bootstrap, то для прокрутки таблиць було використано <a href="http://getbootstrap.com/css/#tables-responsive">responsive tables</a>.</p>
+            <p>Але як виявилось даний метод не працює у Safari на Mac. Не можливо було горизонтально прокрутити контент.</p>
+            <p>При дослідженні проблеми було виявлено, що при <code>overflow: auto;</code> горизонтальний скролінг при завантаженні сторінки ховається.</p>
+            <h2>Посилання:</h2>
+            <ul>
+              <li><a href="https://css-tricks.com/custom-scrollbars-in-webkit/">Custom Scrollbars in WebKit</a></li>
+              <li><a href="http://blog.0100.tv/2012/11/webkit-scrollbars-on-os-x/">-webkit-scrollbar on OS X</a></li>
+              <li><a href="https://webkit.org/blog/363/styling-scrollbars/">Styling Scrollbars</a></li>
+            </ul>
+          </article>
+        </div>
+        <div class="flex-col-aside">
+          <h2>Code examples:</h2>
+          <ul>
+            <li><a href="/starter/">Starter</a></li>
+            <li><a href="/sandbox/js/countdown">Countdown Timer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer">
+      <div class="page-section">&copy; svalchuk</div>
+    </div>
+  </div>
 </body>
 </html>
