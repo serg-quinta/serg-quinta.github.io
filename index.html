@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello</title>
+  <title>Serhiy Valchuk Github Pages</title>
   <link rel="stylesheet" href="../starter/css/main.css">
 </head>
 <body>
@@ -25,7 +25,13 @@
             <h2>Процес:</h2>
             <p>В ході верстки виявилось, що горизонтальна прокрутка не працює в Safari на Mac. Оскільки при верстці я використовував bootstrap, то для прокрутки таблиць було використано <a href="http://getbootstrap.com/css/#tables-responsive">responsive tables</a>.</p>
             <p>Але як виявилось даний метод не працює у Safari на Mac. Не можливо було горизонтально прокрутити контент.</p>
-            <p>При дослідженні проблеми було виявлено, що при <code>overflow: auto;</code> горизонтальний скролінг при завантаженні сторінки ховається.</p>
+            <p>При дослідженні проблеми було виявлено, що при <code>overflow: auto;</code> горизонтальний скролінг при завантаженні сторінки ховається і ним неможливо скористатись за допомогою миші.</p>
+            <p>Пошук вирішення проблеми привів мене до властивості <code>::-webkit-scrollbar</code>.</p>
+            <p>Простого правила, щоб горизонтальний скролінг не ховався я не знайшов. Допомогло тільки перевизначення значень для <code>::-webkit-scrollbar &amp; ::-webkit-scrollbar-thumb</code>.</p>
+            <p>Детальніше про <code>::-webkit-scrollbar</code> можна почитати в статті <a href="https://css-tricks.com/custom-scrollbars-in-webkit/">Custom Scrollbars in Webkit</a>.</p>
+            <h2>Результат:</h2>
+            <p data-height="385" data-theme-id="0" data-slug-hash="QGvypr" data-default-tab="result" data-user="svalchuk" data-embed-version="2" data-pen-title="::-webkit-scrollbar" class="codepen">See the Pen <a href="http://codepen.io/svalchuk/pen/QGvypr/">::-webkit-scrollbar</a> by Serhiy Valchuk (<a href="http://codepen.io/svalchuk">@svalchuk</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
             <h2>Посилання:</h2>
             <ul>
               <li><a href="https://css-tricks.com/custom-scrollbars-in-webkit/">Custom Scrollbars in Webkit</a></li>
